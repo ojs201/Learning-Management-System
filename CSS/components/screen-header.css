@@ -44,6 +44,11 @@
     font-weight: 600;
 }
 
+.screen-header__tab div a {
+    text-decoration: none;
+    color:black;
+}
+
 .screen-header__login {
     display:flex;
     justify-content: space-between;

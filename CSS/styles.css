@@ -7,7 +7,9 @@
 /* Screens */
 @import "screens/main.css";
 @import "screens/mentor-list.css";
-@import "screens/mentor-inform.css"
+@import "screens/mentor-inform.css";
+@import "screens/menti-list.css";
+@import "screens/menti-inform.css";
 
 
 

@@ -1,0 +1,144 @@
+.mentor-classification {
+    text-align: center;
+    margin: 73px 0 30px 0;
+}
+
+.mentor-classification__text {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 32px;
+}
+
+.mentor-classification__search {
+    margin-bottom: 32px;
+}
+
+.mentor-classification__search i {
+    position:relative;
+    left: 50px;
+    font-size: 20px;
+}
+
+.mentor-classification__search input {
+    width: 900px;
+    height: 50px;
+    border-radius: 10px;
+    border: 1px solid rgba(142, 142, 142, 0.93);
+}
+
+.mentor-classification__filter {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 56px;
+}
+
+.mentor-classification__filter__text {
+    font-size: 20px;
+    font-weight: 600;
+    margin-right: 10px;
+    margin-top: 7px;
+}
+
+
+.mentor-classification__filter__dropdown select{
+    width: 150px;
+    height: 35px;
+    border-radius: 6px;
+    margin: 0 10px;
+}
+
+.mentor-list__cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    place-items: center;
+    row-gap: 30px;
+    
+
+}
+
+.mentor-list__cards__1 {
+    width: 276px;
+    height: 484px;
+    border: 1px solid;
+}
+
+.mentor-list__cards__1__box {
+    padding: 10px 16px 16px 16px;
+}
+
+.mentor-list__cards__1__box__name {
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: -1.44px;
+    margin-top: 16px;
+    margin-bottom: 8px;
+}
+
+.mentor-list__cards__1__box__rated {
+    display: flex;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.mentor-list__cards__1__box__rated i {
+    color:#FFC700;
+    margin-right: 5px;
+}
+
+.mentor-list__cards__1__box__rated span:nth-child(1) {
+    padding-right: 7px;
+    border-right: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.mentor-list__cards__1__box__rated span:nth-child(2) {
+    padding-left: 7px;
+}
+
+.mentor-list__cards__1__box__rated__field {
+    display: flex;
+}
+
+.mentor-list__cards__1__box__inform div {
+    display: flex;
+    margin-top: 5px;
+}
+
+.mentor-list__cards__1__box__inform div > div:nth-child(1){
+    opacity: 0.5;
+    margin-right: 5px;
+}
+
+.mentor-list__cards__1__box__button {
+    text-align: center;
+}
+
+.mentor-list__cards__1__box__button button {
+    width: 240px;
+    height: 43px;
+    border-radius: 10px;
+    background: #24C07F;
+    color: #000;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.mentor-list__see-more {
+    text-align: center;
+}
+
+.mentor-list__see-more button {
+    margin: 50px 0px;
+    width: 250px;
+    height: 80px;
+    border-radius: 45px;
+    background: #24C07F;
+    color: #000;
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: -1.44px;
+}
+
+
+
