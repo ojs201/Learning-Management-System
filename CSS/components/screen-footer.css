@@ -1,0 +1,26 @@
+.screen-footer {
+    width: 100%;
+    height: 158px;
+    background-color: #F0F0F0;
+    align-items: center;
+}
+
+.screen-footer__text {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    padding-top: 70px;
+}
+
+.screen-footer__text__left {
+    display: flex;
+}
+
+.screen-footer__text__left div:nth-child(1) {
+    margin-left: 100px;
+    margin-right: 25px;
+}
+
+.screen-footer__text__right {
+    margin-right: 83px;
+}
