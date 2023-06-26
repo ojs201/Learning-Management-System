@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="CSS/styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Manegement System - Chat</title>
+    <script src="https://kit.fontawesome.com/429f4a2ef7.js" crossorigin="anonymous"></script>
+    <!--
+        chat-top__right__button (팝업 띄우는 버튼)
+    -->
+
+</head>
+</head>
+<body>
+    <header class="screen-header">
+        <div class = screen-header__logo>
+            <div>LOGO</div>
+        </div>
+        <div class = screen-header__tab>
+            <div>멘토 목록</div>
+            <div>멘티 목록</div>
+            <div>코칭 문의방</div>
+            <div>마이 클래스룸</div>
+        </div>
+        <div class = screen-header__login-profile>
+            <img src="screenshots/profile.png" width="64px" height="64px">
+        </div>
+    </header>
+    <div class="chat">
+        <section class="chat-top">
+            <div class="chat-top__left">
+                <i class="fas fa-chevron-left"></i>
+                <div class="chat-top__left__inform">
+                    <div class="chat-top__left__inform__img"><img src="screenshots/profile.png" width="48px" height="48px"></div>
+                    <div class="chat-top__left__inform__detail">
+                        <div>멘토 닉네임</div>
+                        <div>전문분야</div>
+                    </div>
+                </div>
+            </div>
+            <div class="chat-top__right">
+                <button class="chat-top__right__button"><a href="#">코칭 성사</a></button>
+            </div>
+        </section>
+        <section class="chat-content">
+            <div class="chat-content__notice">
+                ❗️ 코칭 성사 시, 상단의 코칭 성사 버튼을 눌러 등록을 완료하세요! 코칭 성사 미등록 시 서비스 이용이 제한됩니다.
+            </div>
+            <div class="chat-content__me">
+                <div>15:43</div>
+                <div>안녕하세요 멘토님!
+                    코칭 문의 상담차 연락드려요😊</div>
+            </div>
+            <div class="chat-content__you">
+                <div>16:00</div>
+                <div>네, 안녕하세요.</div>
+            </div>
+        </section>
+        <section class="chat-input">
+            <div><input placeholder=" 메세지를 입력하세요.."></div>
+            <div><button>보내기</button></div>
+        </section>
+    </div>
+    <footer class="screen-footer">
+        <div class="screen-footer__text">
+            <div class="screen-footer__text__left">
+                <div>이용약관</div>
+                <div>개인정보취급방침</div>
+            </div>
+            <div class="screen-footer__text__right">
+                기업명 Copyright 2023. All Rights Reserved
+            </div>
+        </div>
+    </footer>
+
+    <div class="chat-top__right__popup">
+        <div class="chat-top__right__popup__text">
+            <div>멘토 닉네임님과 코칭이 성사되었나요?</div>
+            <div>❗️ 멘토의 이름을 다시 한 번 확인해주세요.</div>
+        </div>
+        <div class="chat-top__right__popup__button">
+            <button></button>
+            <button></button>
+        </div>
+    </div>
+</body>
+</html>
