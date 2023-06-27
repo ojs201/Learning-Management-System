@@ -55,6 +55,9 @@
     right: 400px;
 }
 
+
+
+
 .main-button {
     display: flex;
     justify-content: center;
@@ -62,100 +65,170 @@
     margin: 0px auto;
 }
 
-.main-button div {
-    width:276px;
-    height: 268px;
-
-}
 
 .main-button__mentor {
     border: solid 1px;
-    display: flex;
     margin: 76px 15px 125px;
+    width:276px;
+    height: 268px;
     
 }
 
-.main-button__mentor div {
-    color: #24C07F;
-    font-size: 24px;
-    font-weight: 700;
-    padding-left: 65px;
-    padding-top: 25px;
+.main-button__mentor__img {
+    width: 72px;
+    height: 72px;
+    border-radius: 100px;
+    background: #BED2F1;
+    text-align: center;
+    margin: 20px 0 0 24px;
 }
 
-.main-button__mentor img {
-    width: 30px;
-    height: 30px;
-    padding-right: 65px;
-    padding-top: 25px;
+.main-button__mentor__img img {
+    position: relative;
+    top: 10px;
 }
+
+.main-button__mentor__text {
+    margin-top: 20px;
+    margin-left: 24px;
+}
+
+.main-button__mentor__text div:nth-child(1) {
+    font-size: 26px;
+    font-weight: 600;  
+    margin-bottom: 30px;  
+}
+
+.main-button__mentor__text div:nth-child(2) {
+    opacity:0.6;
+    font-size: 16px;
+    line-height: 24px;
+}
+
 
 .main-button__menti {
     border: solid 1px;
-    display: flex;
     margin: 76px 15px 125px;
+    width:276px;
+    height: 268px;
     
 }
 
-.main-button__menti div {
-    color: #24C07F;
-    font-size: 24px;
-    font-weight: 700;
-    padding-left: 65px;
-    padding-top: 25px;
+.main-button__menti__img {
+    width: 72px;
+    height: 72px;
+    border-radius: 100px;
+    background: #FFE299;
+    text-align: center;
+    margin: 20px 0 0 24px;
 }
 
-.main-button__menti img {
-    width: 30px;
-    height: 30px;
-    padding-right: 65px;
-    padding-top: 25px;
+.main-button__menti__img img {
+    position: relative;
+    top: 10px;
+}
+
+.main-button__menti__text {
+    margin-top: 20px;
+    margin-left: 24px;
+}
+
+.main-button__menti__text div:nth-child(1) {
+    font-size: 26px;
+    font-weight: 600;  
+    margin-bottom: 30px;  
+}
+
+.main-button__menti__text div:nth-child(2) {
+    opacity:0.6;
+    font-size: 16px;
+    line-height: 24px;
 }
 
 .main-button__chat {
     border: solid 1px;
-    display: flex;
     margin: 76px 15px 125px;
+    width:276px;
+    height: 268px;
 }
 
-.main-button__chat div {
-    color: #24C07F;
-    font-size: 24px;
-    font-weight: 700;
-    padding-left: 50px;
-    padding-top: 25px;
+.main-button__chat__img {
+    width: 72px;
+    height: 72px;
+    border-radius: 100px;
+    background: #C6E9B5;
+    text-align: center;
+    margin: 20px 0 0 24px;
 }
 
-.main-button__chat img {
-    width: 30px;
-    height: 30px;
-    padding-right: 65px;
-    padding-top: 25px;
+.main-button__chat__img img {
+    position: relative;
+    top: 10px;
 }
+
+.main-button__chat__text {
+    margin-top: 20px;
+    margin-left: 24px;
+}
+
+.main-button__chat__text div:nth-child(1) {
+    font-size: 26px;
+    font-weight: 600;   
+    margin-bottom: 30px; 
+}
+
+.main-button__chat__text div:nth-child(2) {
+    opacity:0.6;
+    font-size: 16px;
+    line-height: 24px;
+}
+
 
 .main-button__classroom {
     border: solid 1px;
-    display: flex;
     margin: 76px 15px 125px;
+    width:276px;
+    height: 268px;
 }
 
-.main-button__classroom div:nth-child(1) {
-    width: 1000px;
-    height: 80px;
-    background-color: #1065A1;
-    padding-left: 50px;
-    display:flex;
-    align-items: center;
-
+.main-button__classroom__img {
+    width: 72px;
+    height: 72px;
+    border-radius: 100px;
+    background: #E6D5F3;
+    text-align: center;
+    margin: 20px 0 0 24px;
 }
 
-.main-button__classroom div {
-    color: #DBFFF0;
-    font-size: 24px;
-    font-weight: 700;
+.main-button__classroom__img img {
+    position: relative;
+    top: 10px;
 }
 
-.main-button__classroom img {
-    width: 30px;
-    height: 30px;
+.main-button__classroom__text {
+    margin-top: 20px;
+    margin-left: 24px;
+}
+
+.main-button__classroom__text div:nth-child(1) {
+    font-size: 26px;
+    font-weight: 600;    
+    margin-bottom: 30px;
+}
+
+.main-button__classroom__text div:nth-child(2) {
+    opacity:0.6;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+
+.main-button i {
+    position: relative;
+    top: 15px;
+    left: 220px;
+}
+
+.main-button a {
+    color:black;
 }

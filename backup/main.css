@@ -1,0 +1,161 @@
+.main {
+    background-color: #F3FCF8;
+}
+
+.main__banner {
+    display: flex;
+    width: 100vh;
+    margin: 0px auto;
+}
+
+.main__banner__left {
+    position: relative;
+    top: 100px;
+    margin-left:100px;
+}
+
+.main__banner__left__text {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 60px;
+}
+
+.main__banner__left__button {
+    display: flex;
+    justify-content: center;
+    width:180px;
+    height: 40px;
+    margin-top: 30px;
+    background-color:#24C07F;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.main__banner__left__button div {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.main__banner__left__button img {
+    margin-left: 10px;
+    width: 30px;
+    height: 30px;
+}
+
+.main__banner__right {
+    position: relative;
+    right: -300px;
+    
+}
+
+.main__banner__bottom {
+    position: relative;
+    top: 520px;
+    right: 400px;
+}
+
+.main-button {
+    display: flex;
+    justify-content: center;
+    width: 100vh;
+    margin: 0px auto;
+}
+
+.main-button div {
+    width:276px;
+    height: 268px;
+
+}
+
+.main-button__mentor {
+    border: solid 1px;
+    display: flex;
+    margin: 76px 15px 125px;
+    
+}
+
+.main-button__mentor div {
+    color: #24C07F;
+    font-size: 24px;
+    font-weight: 700;
+    padding-left: 65px;
+    padding-top: 25px;
+}
+
+.main-button__mentor img {
+    width: 30px;
+    height: 30px;
+    padding-right: 65px;
+    padding-top: 25px;
+}
+
+.main-button__menti {
+    border: solid 1px;
+    display: flex;
+    margin: 76px 15px 125px;
+    
+}
+
+.main-button__menti div {
+    color: #24C07F;
+    font-size: 24px;
+    font-weight: 700;
+    padding-left: 65px;
+    padding-top: 25px;
+}
+
+.main-button__menti img {
+    width: 30px;
+    height: 30px;
+    padding-right: 65px;
+    padding-top: 25px;
+}
+
+.main-button__chat {
+    border: solid 1px;
+    display: flex;
+    margin: 76px 15px 125px;
+}
+
+.main-button__chat div {
+    color: #24C07F;
+    font-size: 24px;
+    font-weight: 700;
+    padding-left: 50px;
+    padding-top: 25px;
+}
+
+.main-button__chat img {
+    width: 30px;
+    height: 30px;
+    padding-right: 65px;
+    padding-top: 25px;
+}
+
+.main-button__classroom {
+    border: solid 1px;
+    display: flex;
+    margin: 76px 15px 125px;
+}
+
+.main-button__classroom div:nth-child(1) {
+    width: 1000px;
+    height: 80px;
+    background-color: #1065A1;
+    padding-left: 50px;
+    display:flex;
+    align-items: center;
+
+}
+
+.main-button__classroom div {
+    color: #DBFFF0;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.main-button__classroom img {
+    width: 30px;
+    height: 30px;
+}
