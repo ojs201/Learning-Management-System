@@ -1,0 +1,193 @@
+.myclassroom__top {
+    display: flex;
+    margin: 77px 0;
+}
+
+.myclassroom__top__left {
+    margin-left: 200px;
+    display: flex;
+    align-items: center;
+}
+
+.myclassroom__top__left__text div:nth-child(1) {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.myclassroom__top__left__text div:nth-child(2) span:nth-child(1) {
+    color: #676767;
+    font-size: 14px;    
+}
+
+.myclassroom__top__left__text div:nth-child(2) span i {
+    width: 20px;
+    height: 20px;  
+    border-radius: 266.4px;
+    background: #F6E44C;
+}
+
+.myclassroom__top__right {
+    position: absolute;
+    right:40%;
+    left: 40%;
+    font-size: 40px;
+    font-weight: 700;    
+}
+
+.myclassroom__content {
+    width: 810px;
+    margin: 0px auto;
+}
+
+.myclassroom__content__record {
+    width: 781px;
+    height: 323px;
+    border-radius: 10px;
+    border: 1px solid var(--gray-1, #D5D5D5);
+    background: #FFF;
+}
+
+.myclassroom__content__record__welcome{
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: -0.84px;
+    border-bottom: 2px solid #24C07F;
+    margin: 40px;
+    padding-bottom: 10px;
+}
+
+.myclassroom__content__record__detail {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 40px 40px 40px;
+}
+
+.myclassroom__content__record__detail__left__date {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.myclassroom__content__record__detail__left__date i:nth-child(3) {
+    opacity: 0.3;
+}
+
+.myclassroom__content__record__detail__left__time{
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: -1.2px;
+}
+
+.myclassroom__content__record__detail__left__time section div {
+    margin-bottom: 13px;
+}
+
+.myclassroom__content__record__detail__left__time section div span:nth-child(1) {
+    border-right: 2px solid #24C07F;
+    padding-right: 20px;
+}
+
+.myclassroom__content__record__detail__left__time section div span:nth-child(2) {
+    padding-left: 20px;
+}
+
+.myclassroom__content__arrange-list {
+    width: 781px;
+    height: 300px;
+    border: 1px solid var(--gray-1, #D5D5D5);
+    background: #FFF;
+}
+
+.myclassroom__content__arrange-list__title {
+    width: 781px;
+    height: 100px;
+    border-radius: 10px 10px 0px 0px;
+    background: var(--primary-green, #24C07F);
+}
+
+.myclassroom__content__arrange-list__title span {
+    position: relative;
+    font-size: 32px;
+    font-weight: 600;   
+    left:34px;
+    top:31px; 
+}
+
+.myclassroom__content__arrange-list__profile {
+    display: flex;
+    justify-content: space-between;
+    padding: 32px 32px 32px 48px;
+    text-align: center;
+
+}
+
+.myclassroom__content__arrange-list__profile div {
+    width: 100px;
+    height: 145px;
+}
+
+.myclassroom__content__arrange-inform {
+    width: 781px;
+    height: 135px;
+    border-radius: 10px;
+    background: #F5F5F5;
+    display: flex;
+    justify-content: space-between;
+}
+
+.myclassroom__content__arrange-inform__left {
+    margin: 28px 0px 28px 40px;
+}
+
+.myclassroom__content__arrange-inform__left section {
+    display: flex;
+}
+
+.myclassroom__content__arrange-inform__left section:nth-child(1) {
+    margin-bottom: 21px;
+}
+
+.myclassroom__content__arrange-inform__left section div:nth-child(1) {
+    margin-right: 15px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.myclassroom__content__arrange-inform__left section div:nth-child(2) {
+    font-size: 24px;
+}
+
+.myclassroom__content__arrange-inform__right {
+    margin: 28px 40px 20px 40px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 8px;
+}
+
+.myclassroom__content__arrange-inform__right button{
+    width: 220px;
+    height: 77px;
+    padding: 24px 36px;
+    border-radius: 69px;
+    background: #24C07F;
+}
+
+.myclassroom__content__arrange-inform__right button a {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+.myclassroom__content__arrange-inform__right button span {
+    font-size: 22px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+
+.myclassroom__content__arrange-inform__right button span i {
+    position: relative;
+    left: 10px;
+}
