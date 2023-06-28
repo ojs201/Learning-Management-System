@@ -1,0 +1,83 @@
+.chat-list {
+    width: 580px;
+    height: 181px;
+    margin: 80px auto;
+}
+
+.chat-list__box {
+    width: 582px;
+    border: 1px solid var(--gray-1, #D5D5D5);
+    margin-bottom: 40px;
+}
+
+.chat-list__box__title {
+    height: 81px;
+    background: var(--primary-green, #24C07F);
+    padding: 24px;
+}
+
+.chat-list__box__title span{
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: -1.68px;
+}
+
+.chat-list__box > div {
+    display: flex;
+    padding: 32px 0px;
+    border: 1px solid var(--gray-1, #D5D5D5);
+}
+
+.chat-list__box > div article:nth-child(1) {
+    margin-left: 24px;
+    margin-right: 16px;
+}
+
+.chat-list__box > div article:nth-child(2) div:nth-child(1) {
+    margin-bottom: 6px;
+}
+
+.chat-list__box > div article:nth-child(2) div:nth-child(1) span:nth-child(1) {
+    color: #000;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.chat-list__box > div article:nth-child(2) div:nth-child(1) span:nth-child(2) {
+    color: #7C7C7C;
+    font-size: 20px;
+}
+
+.chat-list__box > div article:nth-child(2) div:nth-child(2) {
+    color: #575757;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 20px;
+    font-family: Pretendard;
+}
+
+.chat-list__box > div article:nth-child(3) {
+    position: relative;
+    left: 210px;
+    color: #7C7C7C;
+    text-align: right;
+    font-size: 14px;
+
+}
+
+.chat-list__button {
+    display: flex;
+    justify-content: center;
+}
+
+.chat-list__button button {
+    width: 179px;
+    height: 50px;
+    border-radius: 10px;
+    background: #24C07F;
+}
+
+.chat-list__button button a {
+    font-size: 18px;
+    font-weight: 600;
+}
