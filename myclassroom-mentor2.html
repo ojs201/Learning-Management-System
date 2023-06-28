@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="CSS/styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Manegement System - Myclassroom-mentor</title>
+    <script src="https://kit.fontawesome.com/429f4a2ef7.js" crossorigin="anonymous"></script>
+   
+
+       
+</head>
+<body>
+    <header class="screen-header">
+        <div class = screen-header__logo>
+            <div><a href=index.html>LOGO</a></div>
+        </div>
+        <div class = screen-header__tab>
+            <div><a href=mentor-list.html>멘토 목록</a></div>
+            <div><a href=menti-list.html>멘티 목록</a></div>
+            <div><a href=chat-list.html>코칭 문의방</a></div>
+            <div><a href=myclassroom.html>마이 클래스룸</a></div>
+        </div>
+        <div class = screen-header__login-profile>
+            <img src="screenshots/profile.png" width="64px" height="64px">
+        </div>
+    </header> 
+    
+    <div class="myclassroom-header">A과목 클래스<img src="screenshots/edit.png" width="24px" height="24px"></div>
+    <div class='rap'>
+        <div class="header">
+           <div class="btn prevDay"></div>
+          <h2 class='dateTitle'></h2>
+          <div class="btn nextDay"></div>
+        </div>
+        
+        <div class="grid dateHead">
+          <div>일</div>
+          <div>월</div>
+          <div>화</div>
+          <div>수</div>
+          <div>목</div>
+          <div>금</div>
+          <div>토</div>
+        </div>
+
+        <div class="dateBoard__number"><span>1</span></div>
+    
+        <div class="grid dateBoard">
+        </div>
+      </div>
+
+    <div class="learning-management">
+        <section class="learning-management__prograss">
+            <div class="learning-management__prograss__title">AI기반 학습진행도(목표달성율)</div>
+            <div class="learning-management__prograss__ratio">
+                <img src="screenshots/ratio.png" width="300px" height="300px">
+                <div class="learning-management__prograss__ratio__timer">
+                    <div class="learning-management__prograss__ratio__timer__today">
+                        <div>오늘 목표시간:8시간 00분</div>
+                        <div>오늘 순공시간:5시간 00분</div>
+                    </div>
+                    <div class="learning-management__prograss__ratio__timer__last">마지막 공부입력시간 3:42 PM</div>
+                </div>
+            </div>
+        </section>
+        <section class="learning-assignment">
+            <div class="learning-assignment__top">
+                <span>과제</span>
+                <button><i class="fas fa-camera"></i>순공타이머<i class="fas fa-chevron-right"></i></button>
+            </div>
+            <div class="learning-assignment__list">
+                <div><img src="screenshots/radio_button_unchecked.png"><span>2022대일외고 기출문제 오답</span></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div class="learning-assignment__list__add">
+                    <a href="myclassroom-mentor-modal.html"><img src="screenshots/add_circle.png"></a>
+                    <span>과제 추가하기</span>
+                </div>
+            </div>
+            <div class="learning-assignment__number">총 과제 수 <span>0</span></div>
+        </section>
+    </div>
+    <footer class="screen-footer">
+        <div class="screen-footer__text">
+            <div class="screen-footer__text__left">
+                <div>이용약관</div>
+                <div>개인정보취급방침</div>
+            </div>
+            <div class="screen-footer__text__right">
+                기업명 Copyright 2023. All Rights Reserved
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    
+      <script>
+        const makeCalendar = (date) => {
+            const currentYear = new Date(date).getFullYear();
+            const currentMonth = new Date(date).getMonth() + 1;
+          
+            const firstDay = new Date(date.setDate(1)).getDay();
+            const lastDay = new Date(currentYear, currentMonth, 0).getDate();
+          
+            const limitDay = firstDay + lastDay;
+            const nextDay = Math.ceil(limitDay / 7) * 7;
+          
+            let htmlDummy = '';
+          
+            for (let i = 0; i < firstDay; i++) {
+              htmlDummy += `<div class="noColor"></div>`;
+            }
+          
+            for (let i = 1; i <= lastDay; i++) {    
+              htmlDummy += `<div>${i}</div>`;
+            }
+          
+            for (let i = limitDay; i < nextDay; i++) {
+              htmlDummy += `<div class="noColor"></div>`;
+            }
+          
+            document.querySelector(`.dateBoard`).innerHTML = htmlDummy;
+            document.querySelector(`.dateTitle`).innerText = `${currentYear}년 ${currentMonth}월`;
+          }
+          
+          
+          const date = new Date();
+          
+          makeCalendar(date);
+          
+          // 이전달 이동
+          document.querySelector(`.prevDay`).onclick = () => {
+          makeCalendar(new Date(date.setMonth(date.getMonth() - 1)));
+          }
+          
+          // 다음달 이동
+          document.querySelector(`.nextDay`).onclick = () => {
+          makeCalendar(new Date(date.setMonth(date.getMonth() + 1)));
+          }
+    </script>
+</body>
+</html>

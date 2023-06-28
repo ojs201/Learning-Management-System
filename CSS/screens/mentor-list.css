@@ -53,8 +53,6 @@
     grid-template-rows: 1fr 1fr 1fr;
     place-items: center;
     row-gap: 30px;
-    
-
 }
 
 .mentor-list__cards__1 {

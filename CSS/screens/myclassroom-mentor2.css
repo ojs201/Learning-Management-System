@@ -1,0 +1,232 @@
+.myclassroom-header {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    margin-top: 60px;
+    margin-bottom: 90px;
+    
+}
+
+.myclassroom-header img {
+    margin-left: 15px;
+    border-radius: 40px;
+    background: #EEE;
+
+    
+}
+
+
+/* 달력 */
+.dateHead div {
+    background: #24C07F;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 5px;
+  }
+  
+  .grid div {
+    padding: .6rem;
+    font-size: .9rem;
+    cursor: pointer;
+  }
+  
+  .dateBoard div {
+    color: #222;
+    font-weight: bold;
+    min-height: 6rem;
+    padding: .6rem .8rem;
+    border-radius: 5px;
+    border: 1px solid #eee;
+  }
+  
+  .noColor {
+    background: #eee;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+  }
+
+  .dateTitle {
+    font-size: 32px;
+    font-weight: 600;
+  }
+  
+  /* 좌우 버튼 */
+  .btn {
+   display: block;
+   width: 20px;
+   height: 20px;
+   border: 3px solid #000;
+   border-width: 3px 3px 0 0;
+   cursor: pointer;
+  }
+  
+  .prevDay {
+    transform: rotate(-135deg);
+  }
+  
+  .nextDay {
+    transform: rotate(45deg);
+  }
+  
+  /* ---- */
+  
+  @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
+  
+  * {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;  
+    font-family: Pretendard;
+  }
+  
+  .rap {
+    max-width: 1193px;
+    padding: 0 1.4rem;
+    margin-top: 1.4rem;
+    margin: 0 auto;
+  }
+  
+  .dateHead {
+    margin: .4rem 0;
+  }
+
+  .learning-management {
+    width: 1193px;
+    height: 1402px;
+    border-radius: 10px;
+    background: #F5F5F5;
+    margin: 30px auto 200px auto;
+    padding: 64px 70px;
+  }
+
+  .learning-management__prograss {
+    text-align: center;
+    margin-bottom: 56px;
+  }
+
+  .learning-management__prograss__title {
+    margin-bottom: 56px;
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: -2.4px;
+  }
+
+  .learning-management__prograss__ratio__timer__today {
+    margin: 20px 0px;
+    font-size: 20px;
+  }
+
+  .learning-management__prograss__ratio__timer__last {
+    color: #898989;
+    font-size: 18px;
+  }
+
+  .learning-assignment {
+    width: 1053px;
+    height: 705px;
+    padding: 40px 48px;
+    background: #FFF;
+  }
+
+  .learning-assignment__top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 32px;
+  }
+
+  .learning-assignment__top span {
+    font-size: 36px;
+    font-weight: 600;
+  }
+
+  .learning-assignment__top button {
+    width: 177px;
+    height: 56px;
+    border-radius: 10px;
+    background: var(--primary-green, #24C07F);
+    color: #FFF;
+    font-size: 20px;
+    font-family: Pretendard;
+    font-weight: 600;
+  }
+
+  .learning-assignment__top button i:nth-child(1) {
+    margin-right: 10px;
+  }
+
+  .learning-assignment__top button i:nth-child(2) {
+    margin-left: 5px;
+  }
+
+  .learning-assignment__list div{
+    width: 957px;
+    height: 56px;
+    border-bottom: 2px solid #D5D5D5;
+  }
+
+  .learning-assignment__list div:nth-child(1) {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    letter-spacing: -1.44px;
+
+  }
+
+  .learning-assignment__list__add {
+    display: flex;
+    align-items: center;
+  }
+
+  .learning-assignment__list__add img {
+    margin-right: 10px;
+  }
+
+  .learning-assignment__list__add span {
+    color: #B6B6B6;
+    font-size: 24px;
+    letter-spacing: -1.44px;
+  }
+
+  .learning-assignment__number {
+    margin-top: 32px;
+    color: #616161;
+    text-align: right;
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: -0.72px;
+  }
+
+  .learning-assignment__number span {
+    color: #000;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: -0.72px;
+  }
+
+  .dateBoard__number{
+    position: relative;
+    left: 670px;
+    top: 490px;
+    width: 30px;
+    height: 20px;
+    border-radius: 100px;
+    background: #FFB2B2;
+    text-align: center;
+    font-size: 15px;
+    font-family: Pretendard;
+    font-weight: 700;
+  }
+
+
+
