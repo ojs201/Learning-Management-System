@@ -4,8 +4,8 @@
 }
 
 .screen-header {
+    position: relative;
     display: flex;
-    justify-content: space-between;
     align-items: center;
     margin-top: 22.5px;
     height: 101px;
@@ -14,9 +14,10 @@
 }
 
 .screen-header__logo {
+    position: absolute;
+    left: 100px;
     width: 192px;
     height: 55px;
-    margin-left: 70px;
     background: #9B9B9B;
     display: flex;
 }
@@ -37,10 +38,9 @@
 }
 
 .screen-header__tab {
+    position: absolute;
+    left: 360px;
     display: flex;
-    justify-content: space-between;
-    margin-left: -500px;
-    margin-right: 100px;
 }
 
 .screen-header__tab div {
@@ -55,8 +55,9 @@
 }
 
 .screen-header__login {
+    position: absolute;
+    right: 80px;
     display:flex;
-    justify-content: space-between;
 }
 
 .screen-header__login__sign-in {
@@ -77,5 +78,6 @@
 }
 
 .screen-header__login-profile {
-    margin-right: 80px;
+    position: absolute;
+    right:80px;
 }
