@@ -3,6 +3,8 @@
     height: 158px;
     background-color: #F0F0F0;
     align-items: center;
+    position: fixed;
+    bottom: 0;
 }
 
 .screen-footer__text {

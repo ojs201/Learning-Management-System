@@ -1,0 +1,369 @@
+.mentor-signup__top {
+    font-family: Pretendard;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 60px 0;
+    text-align: center;
+}
+
+.mentor-signup__content {
+    margin: 0px 200px;
+}
+
+
+
+.mentor-signup__content__profile {
+    font-family: Pretendard;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 50px;
+}
+
+.mentor-signup__content__profile div {
+    margin-bottom: 20px;
+}
+
+.mentor-signup__nickname {
+    margin-bottom: 50px;
+}
+.mentor-signup__nickname div:nth-child(1) {
+    font-family: Pretendard;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 20px;
+}
+
+.mentor-signup__nickname input{
+    border-radius: 4px;
+    border: 1px solid var(--gray1, #D5D5D5);
+    background: #FFF;
+    width: 250px;
+    height: 50px;
+    padding: 20px 16px;
+    align-items: flex-start;
+    gap: 8px;
+}
+.mentor-signup__nickname__button {
+    display: inline;
+}
+
+.mentor-signup__nickname__button button {
+    cursor: pointer;
+}
+
+.mentor-signup__nickname__button button:nth-child(1) {
+    border-radius: 10px;
+    border: 2px solid rgba(36, 192, 127, 0.20);
+    background: rgba(255, 255, 255, 0.20);
+    padding: 12px 24px;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.mentor-signup__nickname__button button:nth-child(1) p {
+    color: rgba(36, 192, 127, 0.20);
+    font-family: Pretendard;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.mentor-signup__nickname__button button:nth-child(2) {
+    padding: 12px 24px;
+    align-items: flex-start;
+    gap: 8px;
+    border-radius: 10px;
+    background: rgba(36, 192, 127, 0.20);
+}
+
+.mentor-signup__nickname__button button:nth-child(2) p {
+    color: rgba(0, 0, 0, 0.20);
+    font-family: Pretendard;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.mentor-signup__sex {
+    margin-bottom: 50px;
+}
+
+.mentor-signup__sex div:nth-child(1) {
+    color: var(--black, #000);
+    font-family: Pretendard;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 20px;
+}
+
+.mentor-signup__sex input:nth-child(2) {
+    margin-left: 10px;
+    color: #D5D5D5;
+}
+
+.mentor-signup__age {
+    margin-bottom: 50px;
+}
+
+.mentor-signup__age div {
+    color: var(--black, #000);
+    font-family: Pretendard;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 20px;
+}
+
+.mentor-signup__age p {
+    color: var(--black, #000);
+    font-family: Pretendard;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.mentor-signup__age p input {
+    width: 40px;
+    height: 30px;
+}
+
+.mentor-signup__field {
+    margin-bottom: 50px;
+}
+
+.mentor-signup__field div:nth-child(1) {
+    color: var(--black, #000);
+    font-family: Pretendard;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 20px;
+}
+
+.mentor-signup__field div:nth-child(2) button {
+    padding: 6px 12px;
+    align-items: flex-start;
+    gap: 8px;
+    border-radius: 10px;
+    border: 1px solid var(--gray1, #D5D5D5);
+    background: #FFF;
+}
+
+.mentor-signup__specialization {
+    margin-bottom: 50px;
+}
+
+.mentor-signup__specialization div:nth-child(1) {
+    color: var(--black, #000);
+    font-family: Pretendard;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 20px;
+}
+
+.mentor-signup__specialization div:nth-child(1) p {
+    display: inline;
+    color: #898989;
+}
+
+.mentor-signup__specialization div:nth-child(2) button {
+    padding: 6px 12px;
+    align-items: flex-start;
+    gap: 8px;
+    border-radius: 10px;
+    border: 1px solid var(--gray1, #D5D5D5);
+    background: #FFF;
+}
+
+.mentor-signup__education {
+    margin-bottom: 50px;
+}
+
+.mentor-signup__education > div:nth-child(1) {
+    color: var(--black, #000);
+    font-family: Pretendard;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 20px;
+}
+
+.mentor-signup__education__school {
+    margin-bottom: 10px;
+}
+
+.mentor-signup__education__school div {
+    color: var(--black, #000);
+    font-family: Pretendard;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 5px;
+}
+
+.mentor-signup__education__school input {
+    display: flex;
+    width: 900px;
+    height: 30px;
+    padding: 20px 16px;
+    align-items: flex-start;
+    gap: 8px;
+    border-radius: 4px;
+    border: 1px solid var(--gray1, #D5D5D5);
+    background: #FFF;
+}
+
+.mentor-signup__education__major {
+    margin-bottom: 10px;
+}
+
+.mentor-signup__education__major div {
+    color: var(--black, #000);
+    font-family: Pretendard;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 5px;
+}
+
+.mentor-signup__education__major input {
+    display: flex;
+    width: 900px;
+    height: 30px;
+    padding: 20px 16px;
+    align-items: flex-start;
+    gap: 8px;
+    border-radius: 4px;
+    border: 1px solid var(--gray1, #D5D5D5);
+    background: #FFF;
+}
+.mentor-signup__education__radio div{
+    margin-top: 10px;
+}
+
+.mentor-signup__introduce {
+    margin-bottom: 50px;
+}
+
+.mentor-signup__introduce div{
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 20px;
+}
+
+.mentor-signup__introduce input {
+    display: flex;
+    width: 900px;
+    height: 30px;
+    padding: 20px 16px;
+    align-items: flex-start;
+    gap: 8px;
+    border-radius: 4px;
+    border: 1px solid var(--gray1, #D5D5D5);
+    background: #FFF;
+}
+
+.mentor-signup__time {
+    margin-bottom: 50px;
+}
+
+.mentor-signup__time div{
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 20px;
+}
+
+.mentor-signup__time input {
+    display: flex;
+    width: 900px;
+    height: 30px;
+    padding: 20px 16px;
+    align-items: flex-start;
+    gap: 8px;
+    border-radius: 4px;
+    border: 1px solid var(--gray1, #D5D5D5);
+    background: #FFF;
+}
+
+.mentor-signup__class-method {
+    margin-bottom: 50px;
+}
+
+.mentor-signup__class-method div{
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 20px;
+}
+
+.mentor-signup__class-method input {
+    display: flex;
+    width: 900px;
+    height: 30px;
+    padding: 20px 16px;
+    align-items: flex-start;
+    gap: 8px;
+    border-radius: 4px;
+    border: 1px solid var(--gray1, #D5D5D5);
+    background: #FFF;
+}
+
+.mentor-signup__curriculum {
+    margin-bottom: 50px;
+}
+
+.mentor-signup__curriculum div{
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 20px;
+}
+
+.mentor-signup__curriculum input {
+    display: flex;
+    width: 900px;
+    height: 30px;
+    padding: 20px 16px;
+    align-items: flex-start;
+    gap: 8px;
+    border-radius: 4px;
+    border: 1px solid var(--gray1, #D5D5D5);
+    background: #FFF;
+}
+
+.mentor-signup__bottom button{
+    cursor: pointer;
+    padding: 16px 80px;
+    gap: 8px;
+    border-radius: 10px;
+    background: #24C07F;
+}
+
+
+
+
+
+
+.mentor-signup__bottom {
+    text-align: center;
+}

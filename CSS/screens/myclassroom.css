@@ -57,38 +57,48 @@
 }
 
 .myclassroom__content__record__detail {
-    display: flex;
-    justify-content: space-between;
     margin: 0px 40px 40px 40px;
 }
 
-.myclassroom__content__record__detail__left__date {
+.myclassroom__content__record__detail__date {
     margin-bottom: 20px;
     font-size: 24px;
     font-weight: 700;
 }
 
-.myclassroom__content__record__detail__left__date i:nth-child(3) {
+.myclassroom__content__record__detail__date i:nth-child(3) {
     opacity: 0.3;
 }
 
-.myclassroom__content__record__detail__left__time{
+.myclassroom__content__record__detail__content{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.myclassroom__content__record__detail__content__left__time{
     font-size: 20px;
     font-weight: 500;
     letter-spacing: -1.2px;
 }
 
-.myclassroom__content__record__detail__left__time section div {
+.myclassroom__content__record__detail__content__left__time section div {
     margin-bottom: 13px;
 }
 
-.myclassroom__content__record__detail__left__time section div span:nth-child(1) {
+.myclassroom__content__record__detail__content__left__time section div span:nth-child(1) {
     border-right: 2px solid #24C07F;
     padding-right: 20px;
 }
 
-.myclassroom__content__record__detail__left__time section div span:nth-child(2) {
+.myclassroom__content__record__detail__content__left__time section div span:nth-child(2) {
     padding-left: 20px;
+}
+
+.myclassroom__content__record__detail__content__left__time__title {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 10px;
 }
 
 .myclassroom__content__arrange-list {

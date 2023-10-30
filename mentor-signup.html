@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="CSS/styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Manegement System - Mentor sign up</title>
+    <script src="https://kit.fontawesome.com/429f4a2ef7.js" crossorigin="anonymous"></script>
+</head>
+</head>
+<body>
+    <header class="screen-header">
+        <div class = screen-header__logo>
+            <div><a href=index.html><img src="screenshots/Study-doctor.png" width="200px" height="60px"></a></div>
+        </div>
+        <div class = screen-header__tab>
+            <div><a href=mentor-list.html>멘토 목록</a></div>
+            <div><a href=menti-list.html>멘티 목록</a></div>
+            <div><a href=chat-list.html>코칭 문의방</a></div>
+            <div><a href=myclassroom.html>마이 클래스룸</a></div>
+        </div>
+        <div class = screen-header__login>
+            <a href = sign-up.html class = "screen-header__login__sign-in">로그인</a>
+            <a href = mentor-signup.html class = "screen-header__login__sign-up">회원가입</a>
+        </div>
+    </header>
+
+    <div class="mentor-signup">
+        <section class="mentor-signup__top"><p>프로필 입력</p></section>
+        <section class="mentor-signup__content">
+            <div class="mentor-signup__content__profile">
+                <div>프로필 이미지</div>
+                <img src="screenshots/profileimage.png">
+            </div>
+            <div class="mentor-signup__nickname">
+                <div>닉네임</div>
+                <div>
+                    <input type="text" placeholder="닉네임을 입력해주세요"/>
+                    <div class="mentor-signup__nickname__button">
+                        <button><p>중복확인</p></button>
+                        <button><p>저장</p></button>
+                    </div>
+                </div>
+            </div>
+            <div class="mentor-signup__sex">
+                <div>성별</div>
+                <div>
+                    <input type="radio" name="sex"/>여성
+                    <input type="radio" name="sex"/>남성
+                </div>
+                
+            </div>
+            <div class="mentor-signup__age">
+                <div>나이</div>
+                <p>만&nbsp<input type="text" placeholder="나이">세</p>
+            </div>
+            <div class="mentor-signup__field">
+                <div>분야</div>
+                <div>
+                    <button>수능</button>
+                    <button>편입</button>
+                    <button>공무원</button>
+                    <button>어학</button>
+                    <button>유학</button>
+                    <button>자격증</button>
+                    <button>대학전공</button>
+                    <button>기타</button>
+                </div>
+            </div>
+            <div class="mentor-signup__specialization">
+                <div>전문분야 <p>(선택)</p></div>
+                <div>
+                    <button>수능</button>
+                    <button>편입</button>
+                    <button>공무원</button>
+                    <button>어학</button>
+                    <button>유학</button>
+                    <button>자격증</button>
+                    <button>대학전공</button>
+                    <button>기타</button>
+                </div>
+            </div>
+            <div class="mentor-signup__education">
+                <div>학력</div>
+                <div class="mentor-signup__education__school">
+                    <div>학교</div>
+                    <input type="text" placeholder="학교명을 입력해주세요"/>
+                </div>
+                <div class="mentor-signup__education__major">
+                    <div>전공</div>
+                    <input type="text" placeholder="전공을 입력해주세요"/>
+                </div>
+                <div class="mentor-signup__education__radio">
+                    <div><input type="radio"/>재학 중</div>
+                    <div><input type="radio"/>졸업</div>
+                </div>
+            </div>
+            <div class="mentor-signup__introduce">
+                <div>멘토님에 대해 짧게 소개해주세요.</div>
+                <input type="text" placeholder="예) 저는 수학과외 경력 3년 이상의 전문수학쌤입니다!"/>
+            </div>
+            <div class="mentor-signup__time">
+                <div>가능한 시간대를 알려주세요.</div>
+                <input type="text" placeholder="예) 평일 19시 이후 / 화목 12시-15시, 토 16시 이후 / 협의가능"/>
+            </div>
+            <div class="mentor-signup__class-method">
+                <div>수업 방식은 어떻게 되나요?</div>
+                <input type="text" placeholder="예) 매 코칭 후에 과제가 나가고 다음 코칭 세션 때 지난 과제를 확인하고 시작합니다."/>
+            </div>
+            <div class="mentor-signup__curriculum">
+                <div>멘토님의 커리큘럼을 작성해주세요.</div>
+                <input type="text" placeholder="멘토님만의 커리큘럼을 작성해주세요. 자세할수록 매칭률이 올라갑니다!"/>
+            </div>
+
+            </div>
+        </section>
+        <section class="mentor-signup__bottom"><button><p>저장</p></button></section>
+    </div>
+
+</body>
+</html>
