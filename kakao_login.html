@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href = "javascript:kakaoLogin();"><img src="screenshots/kakao.png"></a>
+    <a href = "javascript:kakaoLogout();"><img src="screenshots/logout.jpg" width = 100px, height = 100px></a>
+    <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
+    <script>
+        //db091213c47b264d816ff17c3c8aa9e2
+        window.Kakao.init("db091213c47b264d816ff17c3c8aa9e2");
+
+        function kakaoLogin() {
+            window.Kakao.Auth.login({
+                scope:'profile_nickname, profile_image',
+                success: function(authObj) {
+                    console.log(auth.Obj);
+                    window.Kakao.API.request({
+                        url:'/v2/user/me',
+                        success: res => {
+                            const kakao_account = res.kakao_account;
+                            console.log(kakao_account);
+                        }
+                    });
+                }
+            });
+        }
+
+        function kakaoLogout() {
+            if (Kakao.Auth.getAccessToken()) {
+              Kakao.API.request({
+                url: '/v1/user/unlink',
+                success: function (response) {
+                    console.log(response)
+                },
+                fail: function (error) {
+                  console.log(error)
+                },
+              })
+              Kakao.Auth.setAccessToken(undefined)
+            }
+          }  
+    </script>
+</body>
+</html>
