@@ -1,6 +1,6 @@
 
 const socket = io('https://www.studydoctor.shop',{
-    cors: { origin: '*' }
+    transports: ['websocket']
   });
 
 const sendButton = document.querySelector(".send-button");
