@@ -1,6 +1,8 @@
 
-const socket = io('https://www.studydoctor.shop',{
-    transports: ['websocket']
+const socket = io('https://www.studydoctor.shop', {
+    reconnection: true,
+    reconnectionDelay: 500,
+    reconnectionAttempts: 10,
   });
 
 const sendButton = document.querySelector(".send-button");
