@@ -1,6 +1,11 @@
+.timer__wrapper {
+    background-color: black;
+}
+
 .screen {
+    margin-top: 100px;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly
 
 }
 
@@ -12,6 +17,10 @@
     width: 1000px;
     height: 600px;
     background-color: black;
+}
+
+.screen__main__view img {
+    border-radius: 10px;
 }
 
 .screen__main__stop {
@@ -32,11 +41,20 @@
     cursor: pointer;
 }
 
+.screen__main__stop span {
+    color: var(--white, #FFF);
+    font-family: Pretendard;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
 .screen_inform {
     width: 314px;
     height: 600px;
-    background-color: wheat;
+    background-color: white;
     padding: 22px;
+    border-radius: 10px;
 }
 
 .screen_inform__goal {
@@ -106,4 +124,12 @@
 
 .screen_inform__exit:hover {
     cursor: pointer;
+}
+
+.screen_inform__exit span {
+    color: var(--white, #FFF);
+    font-family: Pretendard;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
 }

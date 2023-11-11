@@ -1,3 +1,7 @@
+#myclassroom_wrapper {
+    height: 98vh;
+}
+
 .myclassroom__top {
     display: flex;
     margin: 77px 0;
