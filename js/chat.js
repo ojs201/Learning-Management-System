@@ -1,6 +1,6 @@
 "use strict"
 const socket = io('https://www.studydoctor.shop',{
-    cors: { origin: '*' }
+    cors: { origin: 'https://ojs201.github.io' }
   });
 
 const sendButton = document.querySelector(".send-button");
