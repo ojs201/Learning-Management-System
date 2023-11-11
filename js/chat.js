@@ -1,4 +1,4 @@
-"use strict"
+
 const socket = io('https://www.studydoctor.shop',{
     cors: { origin: '*' }
   });
