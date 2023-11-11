@@ -1,4 +1,3 @@
-
 const socket = io('https://www.studydoctor.shop');
 
 const sendButton = document.querySelector(".send-button");
@@ -7,55 +6,58 @@ const chatList = document.querySelector(".chatting-list");
 const displayContainer = document.querySelector(".chat-content");
 
 const nickname = document.querySelector("#nickname");
-const receiver = document.querySelector("#receiver");
-const completeButton = document.querySelector(".complete-button");
+const nicknameButton = document.querySelector(".nickname-button");
+const room = document.querySelector("#room");
+const roomButton = document.querySelector(".room-button");
 
-chatInput.addEventListener("keypress", (event)=>{
-    if(event.keyCode === 13){
-        send();
-    }
+let roomName;
+
+nicknameButton.disabled = true;
+sendButton.disabled = true;
+
+function addMessage(message){
+    const li = document.createElement("li");
+    li.innerText = message;
+    chatList.appendChild(li);
+}
+
+function handleMessageSubmit(event){
+    event.preventDefault();
+    const value = chatInput.value;
+    socket.emit("new_message", chatInput.value, roomName, () =>{
+        addMessage(`You: ${value}`);
+    });
+    chatInput.value = "";
+}
+
+function handleNicknameSubmit(event){
+    event.preventDefault();
+    sendButton.disabled = false;
+    socket.emit("nickname", nickname.value);
+}
+
+function showRoom(){
+    chatInput.addEventListener("keypress", (event) =>{
+        if(event.keyCode === 13){
+            handleMessageSubmit(event);
+        }
+    })
+    sendButton.addEventListener("click", handleMessageSubmit);
+    nicknameButton.addEventListener("click", handleNicknameSubmit);
+}
+
+function handleRoomSubmit(event){
+    event.preventDefault();
+    socket.emit("enter_room", room.value, showRoom);
+    roomName = room.value;
+    nicknameButton.disabled = false;
+}
+
+roomButton.addEventListener("click", handleRoomSubmit);
+
+socket.on("bye", (left) => {
+    addMessage(`${left} left ㅠㅠ`);
 })
 
-function send(){
-    const param = {
-            name: nickname.value,
-            msg: chatInput.value,
-            rec: receiver.value
-        }
-    socket.emit("chatting", param);
-    chatInput.value = ""
-}
 
-sendButton.addEventListener("click", send)
-completeButton.addEventListener("click", socketOn)
-
-function socketOn(){
-    socket.on(nickname.value, (data)=>{
-        console.log(data)
-        const { name, msg, time } = data;
-        const item = new LiModel(name, msg, time);
-        item.makeLi()
-        displayContainer.scrollTo(0, displayContainer.scrollHeight)
-    })
-    console.log("받을 준비완료")
-}
-
-
-function LiModel(name, msg, time) {
-    this.name = name;
-    this.msg = msg;
-    this.time = time;
-
-    this.makeLi = () => {
-        const li = document.createElement("li");
-        li.classList.add(nickname.value === this.name ? "sent" : "received")
-        const dom = `<span class="profile">
-            <span class="user">${this.name}</span>
-            <img src="https://source.unsplash.com/random/50x50" alt="any">
-        </span>
-        <span class="message">${this.msg}</span>
-        <span class="time">${this.time}</span>`;
-        li.innerHTML = dom;
-        chatList.appendChild(li)
-    }
-}
+socket.on("new_message", addMessage);
