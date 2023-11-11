@@ -1,5 +1,5 @@
-const socket = io.connect('https://www.studydoctor.shop',{
-    transports: ["polling", "websocket"], 'path': '/api/new/socket'
+const socket = io('https://www.studydoctor.shop',{
+    transports: ["websocket", "polling"], 'path': '/api/new/socket'
 });
 
 const sendButton = document.querySelector(".send-button");
