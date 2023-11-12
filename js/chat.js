@@ -1,4 +1,4 @@
-const socket = io('https://www.studydoctor.shop',{
+const socket = io('wss://www.studydoctor.shop',{
     transports: ["websocket", "polling"]
 });
 
