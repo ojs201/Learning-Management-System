@@ -452,6 +452,16 @@
         </div>
     </footer>
 
+    <script>
+        function getData() {
+            fetch('https://www.studydoctor.shop/app/mentor/all')
+            .then((response) => response.json)
+            .then((data) => console.log(data))
+        }
+
+        getData()
+    </script>
+
     
 </body>
 </html>

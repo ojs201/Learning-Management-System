@@ -43,6 +43,14 @@
             </div>
         </section>
         <section class="chat-content">
+            <div class="user-container">
+                <label for="nickname">보내는 사람</label>
+                <input type="text" id="nickname">
+                <button class="nickname-button">닉네임 save</button>
+                <label for="room">룸 번호</label>
+                <input type="text" id="room">
+                <button class="room-button">룸 save</button>
+            </div>
             <div class="chat-content__notice">
                 ❗️ 코칭 성사 시, 상단의 코칭 성사 버튼을 눌러 등록을 완료하세요! 코칭 성사 미등록 시 서비스 이용이 제한됩니다.
             </div>
@@ -55,6 +63,7 @@
                 <div>16:00</div>
                 <div>네, 안녕하세요.</div>
             </div>
+            <ul class="chatting-list"></ul>
         </section>
         <section class="chat-input">
             <div><input placeholder=" 메세지를 입력하세요.."></div>
@@ -72,6 +81,8 @@
             </div>
         </div>
     </footer>
+    <script src="https://www.studydoctor.shop/socket.io/socket.io.js"></script>
+    <script src="/js/chat.js"></script>
 
 </body>
 </html>
