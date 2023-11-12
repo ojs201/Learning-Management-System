@@ -1,4 +1,4 @@
-const socket = io();
+const socket = io("https://www.studydoctor.shop");
 
 const sendButton = document.querySelector(".send-button");
 const chatInput = document.querySelector(".chatting-input");
