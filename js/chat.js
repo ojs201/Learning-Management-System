@@ -1,4 +1,5 @@
 const socket = io("https://www.studydoctor.shop",{
+    transprots: ['polling'],
     path: '/socket.io'
 });
 
