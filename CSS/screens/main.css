@@ -1,5 +1,5 @@
 .main_wrapper {
-    height: 97vh;
+    min-height: calc(100vh - 158px); 
 }
 
 .main {

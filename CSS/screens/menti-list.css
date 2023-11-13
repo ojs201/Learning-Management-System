@@ -1,5 +1,5 @@
 .menti-list_wrapper {
-    height: 2300px;
+    min-height: calc(100vh - 158px); 
 }
 
 .mentor-classification {
