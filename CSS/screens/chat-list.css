@@ -1,6 +1,9 @@
+#chat-list_wrapper {
+    height: 98vh;
+}
+
 .chat-list {
     width: 580px;
-    height: 181px;
     margin: 80px auto;
 }
 

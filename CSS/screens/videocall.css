@@ -1,0 +1,189 @@
+.videocall__wrapper {
+    background-color: #000;
+}
+
+.video {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 100px;
+}
+
+.videocall__buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.videocall__buttons__function {
+    width: 70%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.videocall__buttons__exit button{
+    display: flex;
+    padding: 20px 30px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 10px;
+    background: #EF4B4B;
+}
+
+.videocall__buttons__exit button :hover {
+    cursor: pointer;
+}
+
+.videocall__buttons__exit button span {
+    color: white;
+    font-weight: 600;
+}
+
+.interaction {
+    width: 471px;
+    padding: 24px;
+    gap: 24px;
+    border-radius: 10px;
+    background: #595A5C;
+}
+
+.interaction__users {
+    border-radius: 10px;
+    background: var(--white, #FFF);
+    padding: 24px;
+    gap: 16px;
+    margin-bottom: 24px;
+
+}
+
+.interaction__users__title {
+    color: #505050;
+    font-family: Pretendard;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 15px;
+}
+
+.interaction__users__information div{
+    display: flex;
+    align-items: center;
+}
+
+.interaction__users__information div img {
+    width: 40px;
+    height: 40px;
+}
+
+.interaction__users__information__mentor span {
+    color: var(--black, #000);
+    font-family: Pretendard;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.interaction__users__information__mentor span span {
+    color: var(--primary_green, #24C07F);
+    font-family: Pretendard;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.interaction__users__information__menti span {
+    color: var(--black, #000);
+    font-family: Pretendard;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.interaction__users__information__menti span span {
+    color: var(--primary_green, #FFC700);
+    font-family: Pretendard;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.interaction__chat {
+    border-radius: 10px;
+    background: var(--white, #FFF);
+    padding: 24px;
+    gap: 16px;
+    align-self: stretch;
+    height: 685px;
+}
+
+.interaction__chat__title {
+    color: #505050;
+    font-family: Pretendard;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding-bottom: 10px;
+}
+
+.interaction__chat__message {
+    width: 375px;
+    height: 538px;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.06);
+    position: relative;
+}
+
+.interaction__chat__message div:nth-child(1) {
+    padding: 14px 20px;
+    gap: 8px;
+    border-radius: 10px;
+    background: var(--primary_green, #24C07F);
+    width: 180px;
+    height: 49px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.interaction__chat__message div:nth-child(2) {
+    padding: 14px 18px;
+    gap: 8px;
+    border-radius: 10px;
+    background: var(--white, #FFF);
+    width: 150px;
+    height: 50px;
+    position: absolute;
+    left: 10px;
+    top: 60px;
+}
+.interaction__chat__input {
+    margin-top: 10px;
+}
+
+.interaction__chat__input input{
+    padding: 13px 12px;
+    gap: 8px;
+    border-radius: 10px;
+    background: #F5F5F5;
+    width: 268px;
+}
+
+.interaction__chat__input__button {
+    width: 95px;
+    padding: 13px 25px;
+    gap: 9px;
+    border-radius: 10px;
+    background: #DBDBDB;
+    margin-left: 5px;
+}
+
+.interaction__chat__input__button :hover {
+    cursor: pointer;
+}

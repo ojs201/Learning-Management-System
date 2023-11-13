@@ -216,8 +216,8 @@
 
   .dateBoard__number{
     position: relative;
-    left: 670px;
-    top: 490px;
+    left: 510px;
+    top: 285px;
     width: 30px;
     height: 20px;
     border-radius: 100px;
@@ -226,6 +226,12 @@
     font-size: 15px;
     font-family: Pretendard;
     font-weight: 700;
+  }
+
+  .dateBoard__camera {
+    position: relative;
+    left: 610px;
+    bottom: 280px;
   }
 
 

@@ -8,46 +8,49 @@
     <title>Document</title>
     <script src="https://kit.fontawesome.com/429f4a2ef7.js" crossorigin="anonymous"></script>
 </head>
-<body>
-    <section>
-        <div><img src="/screenshots/people1.png"></div>
-        <div><img src="/screenshots/people2.png"></div>
-        <div>
-            <div>
-                <div><img src="/screenshots/people1.png"></div>
-                <div><img src="/screenshots/people2.png"></div>
-                <div><img src="/screenshots/chat.png"></div>
-            </div>
-            <div>
-                <button>나가기</button>
-            </div>
-        </div>
-    </section>
-    <section>
-        <div>
-            <div><span>참여자</span></div>
-            <div>
-                <div>
-                    <img src="/screenshots/profile.png">
-                    <span>멘토 닉네임</span>
+<body class="videocall__wrapper">
+    <div class="video">
+        <section class="videocall">
+            <div><img src="screenshots/people1.png"></div>
+            <div><img src="screenshots/people2.png"></div>
+            <div class="videocall__buttons">
+                <div class="videocall__buttons__function">
+                    <div><img src="screenshots/videocam.png"></div>
+                    <div><img src="screenshots/microphone.png"></div>
+                    <div><img src="screenshots/chat.png"></div>
                 </div>
-                <div>
-                    <img src="/screenshots/profile.png">
-                    <span>멘티 닉네임</span>
+                <div class="videocall__buttons__exit">
+                    <a href="myclassroom-mentor.html"><button><span>나가기</span></button></a>
                 </div>
             </div>
-        </div>
-        <div>
-            <div>채팅창</div>
-            <div>
-                <div>여기 모르겠어요!</div>
-                <div>같이 볼까요?</div>
+        </section>
+        <section class="interaction">
+            <div class="interaction__users">
+                <div class="interaction__users__title"><span>참여자</span></div>
+                <div class="interaction__users__information">
+                    <div class="interaction__users__information__mentor">
+                        <img src="screenshots/profile.png">
+                        <span><span>멘토</span> 닉네임</span>
+                    </div>
+                    <div class="interaction__users__information__menti">
+                        <img src="screenshots/profile.png">
+                        <span><span>멘티</span> 닉네임</span>
+                    </div>
+                </div>
             </div>
-            <div>
-                <input placeholder="메세지를 입력하세요...">
-                <button>보내기</button>
+            <div class="interaction__chat">
+                <div class="interaction__chat__title">채팅창</div>
+                <div class="interaction__chat__message">
+                    <div>여기 모르겠어요!</div>
+                    <div>같이 볼까요?</div>
+                </div>
+                <div class="interaction__chat__input">
+                    <input placeholder="메세지를 입력하세요...">
+                    <button class="interaction__chat__input__button">보내기</button>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </div>
+    
 </body>
 </html>

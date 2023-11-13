@@ -1,3 +1,7 @@
+.myclassroom-mentor_wrapper {
+  height: 200vh;
+}
+
 .myclassroom-header {
     text-align: center;
     font-size: 40px;
@@ -11,12 +15,19 @@
     margin-left: 15px;
     border-radius: 40px;
     background: #EEE;
+}
 
-    
+.myclassroom-entrance {
+    position: absolute;
+    right: 100px;
 }
 
 
 /* 달력 */
+
+.rap {
+  position: relative;
+}
 .dateHead div {
     background: #24C07F;
     color: #fff;
