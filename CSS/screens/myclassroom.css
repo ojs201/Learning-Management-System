@@ -1,5 +1,9 @@
 #myclassroom_wrapper {
-    height: 98vh;
+    min-height: calc(100vh - 158px); 
+}
+
+.myclassroom {
+    margin-bottom: 350px;
 }
 
 .myclassroom__top {

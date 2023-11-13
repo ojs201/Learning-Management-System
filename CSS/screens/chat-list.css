@@ -1,5 +1,5 @@
 #chat-list_wrapper {
-    height: 98vh;
+    min-height: calc(100vh - 158px); 
 }
 
 .chat-list {

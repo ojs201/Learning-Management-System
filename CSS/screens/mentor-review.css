@@ -1,5 +1,6 @@
 .mentor-review_wrapper {
-    height: 97vh;
+    min-height: 100%;
+	position: relative;
 }
 
 .mentor {

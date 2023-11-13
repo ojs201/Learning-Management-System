@@ -1,5 +1,5 @@
 .myclassroom-mentor_wrapper {
-  height: 200vh;
+  min-height: calc(100vh - 158px); 
 }
 
 .myclassroom-header {

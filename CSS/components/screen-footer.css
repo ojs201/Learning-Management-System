@@ -1,11 +1,8 @@
 .screen-footer {
     width: 100%;
-    height: 158px;
     background-color: #F0F0F0;
     align-items: center;
-    bottom: 0px;
-	position: absolute;
-	height: 158px;
+    height: 10rem;
 }
 
 .screen-footer__text {
