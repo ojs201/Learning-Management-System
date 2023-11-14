@@ -1,6 +1,5 @@
 .mentor-review_wrapper {
-    min-height: 100%;
-	position: relative;
+    min-height: calc(100vh - 158px); 
 }
 
 .mentor {
