@@ -24,7 +24,6 @@ let cameraOff = false;
 let myPeerConnection;
 let myDataChannel;
 
-myFace.volume = 0;
 nicknameButton.disabled = true;
 sendButton.disabled = true;
 
