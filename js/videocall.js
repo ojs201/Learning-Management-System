@@ -100,7 +100,6 @@ async function getCameras(){
 }
 
 async function getMedia(deviceId){
-    socket.emit("test", "test", roomName);
     const initialConstrains = {
         audio: true,
         video: { facingMode: "user" }
@@ -157,6 +156,20 @@ muteBtn.addEventListener("click", handleMuteClick);
 cameraBtn.addEventListener("click", handleCameraClick);
 camerasSelect.addEventListener("input", handleCameraChange);
 
+// urls: [
+//     "stun:stun.l.google.com:19302",
+//     "stun:stun1.l.google.com:19302",
+//     "stun:stun2.l.google.com:19302",
+//     "stun:stun3.l.google.com:19302",
+//     "stun:stun4.l.google.com:19302",
+//     "stun:stun01.sipphone.com",
+//     "stun:stun.ekiga.net",
+//     "stun:stun.fwdnet.net",
+//     "stun:stun.ideasip.com",
+//     "stun:stun.iptel.org",
+//     "stun:stun.rixtelecom.se",
+//     "stun:stun.schlund.de"
+// ]
 
 //RTC Code
 
@@ -169,14 +182,7 @@ function makeConnection() {
                     "stun:stun1.l.google.com:19302",
                     "stun:stun2.l.google.com:19302",
                     "stun:stun3.l.google.com:19302",
-                    "stun:stun4.l.google.com:19302",
-                    "stun:stun01.sipphone.com",
-                    "stun:stun.ekiga.net",
-                    "stun:stun.fwdnet.net",
-                    "stun:stun.ideasip.com",
-                    "stun:stun.iptel.org",
-                    "stun:stun.rixtelecom.se",
-                    "stun:stun.schlund.de"
+                    "stun:stun4.l.google.com:19302"
                 ]
             }
         ]
