@@ -1,4 +1,4 @@
-const socket = io();
+const socket = io.connect("https://www.studydoctor.shop",{path: "/socket.io", transports: ['polling']});
 
 const sendButton = document.querySelector(".interaction__chat__input__button");
 const chatInput = document.querySelector(".chatting-input");
