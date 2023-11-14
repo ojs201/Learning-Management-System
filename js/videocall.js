@@ -15,6 +15,7 @@ const muteBtn = document.getElementById("mute");
 const cameraBtn = document.getElementById("camera");
 const chatBtn = document.getElementById("chat");
 const camerasSelect = document.getElementById("cameras");
+const interaction_section = document.getElementById("interaction_section");
 
 let roomName;
 let myStream;
@@ -22,9 +23,8 @@ let muted = false;
 let cameraOff = false;
 let myPeerConnection;
 let myDataChannel;
-let interaction = false;
 
-displayContainer.hidden = true;
+interaction_section.style.display = "none";
 nicknameButton.disabled = true;
 sendButton.disabled = true;
 
@@ -79,10 +79,10 @@ async function handleRoomSubmit(event){
 
 function handleChatSubmit(event){
     event.preventDefault();
-    if(displayContainer.hidden){
-        displayContainer.hidden = false;
+    if(interaction_section.style.display === "none"){
+        interaction_section.style.display = "block";
     }else{
-        displayContainer.hidden = true;
+        interaction_section.style.display = "none";
     }
 }
 
