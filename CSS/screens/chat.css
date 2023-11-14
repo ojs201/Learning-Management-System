@@ -163,17 +163,15 @@
     border-radius: 10px;
     background: var(--primary-green, #24C07F);
     overflow: hidden; 
-    display: flex;
-    align-items: center;
-    padding: 0px 10px;
+    display: inline-block;
+    padding: 20px 10px;
     font-size: 16px;
 }
 
 .received {
     border-radius: 10px;
     background: #EBEBEB;
-    display: flex;
-    align-items: center;
-    padding: 0 20px;
+    display: inline-block;
+    padding: 20px 20px;
     font-size: 16px;
 }
