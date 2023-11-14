@@ -15,9 +15,11 @@ let roomName;
 nicknameButton.disabled = true;
 sendButton.disabled = true;
 
-function addMessage(message){
+function addMessage(nickname, message){
     const li = document.createElement("li");
-    li.innerText = message;
+    const dom =`<span class="user">${nickname}</span>
+    <span class="message">${message}</span>`;
+    li.innerHTML = dom;
     chatList.appendChild(li);
 }
 
@@ -25,7 +27,7 @@ function handleMessageSubmit(event){
     event.preventDefault();
     const value = chatInput.value;
     socket.emit("new_message", chatInput.value, roomName, () =>{
-        addMessage(`You: ${value}`);
+        addMessage(nickname.value, value);
     });
     chatInput.value = "";
 }
@@ -56,8 +58,10 @@ function handleRoomSubmit(event){
 roomButton.addEventListener("click", handleRoomSubmit);
 
 socket.on("bye", (left) => {
-    addMessage(`${left} left ㅠㅠ`);
+    addMessage(left, "left ㅠㅠ");
 })
 
 
-socket.on("new_message", addMessage);
+socket.on("new_message", (nickname, message) =>{
+    addMessage(nickname, message);
+});
