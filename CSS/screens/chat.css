@@ -161,17 +161,52 @@
 
 .sent {
     border-radius: 10px;
-    background: var(--primary-green, #24C07F);
-    overflow: hidden; 
-    display: inline-block;
-    padding: 20px 10px;
+    overflow: hidden;
+    display: block;
+    padding: 10px 10px;
     font-size: 16px;
+    position: relative;
+    left: 300px;
+    width: 250px;
+}
+
+.sent .user {
+    border-radius: 10px;
+    position: relative;
+    left: 170px;
+}
+
+.sent .message {
+    border-radius: 10px;
+    background: var(--primary-green, #24C07F);
+    overflow: hidden;
+    padding: 5px 10px;
+    font-size: 16px;
+    display: block;
 }
 
 .received {
     border-radius: 10px;
-    background: #EBEBEB;
-    display: inline-block;
-    padding: 20px 20px;
+    display: block;
+    padding: 10px 10px;
     font-size: 16px;
+    width: 250px;
+
+}
+
+.received .user {
+    border-radius: 10px;
+}
+
+.received .message {
+    border-radius: 10px;
+    background: var(--primary-green, #EBEBEB);
+    overflow: hidden;
+    padding: 5px 10px;
+    font-size: 16px;
+    display: block;
+}
+
+#room {
+    width: 100px;
 }
