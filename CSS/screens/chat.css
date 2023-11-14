@@ -155,3 +155,14 @@
     font-weight: 500;
 } 
 
+.chatting-list li {
+    border-radius: 10px;
+    background: var(--primary-green, #24C07F);
+    overflow: hidden; 
+    display: flex;
+    align-items: center;
+    padding: 0px 10px;
+    margin-left: 230px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
