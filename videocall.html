@@ -11,13 +11,14 @@
 <body class="videocall__wrapper">
     <div class="video">
         <section class="videocall">
-            <div><img src="screenshots/people1.png"></div>
-            <div><img src="screenshots/people2.png"></div>
+            <div><video id="myFace" autoplay playsinline width="400" height="300"></video></div>
+            <div><video id="peersFace" autoplay playsinline width="400" height="300"></video></div>
             <div class="videocall__buttons">
                 <div class="videocall__buttons__function">
-                    <div><img src="screenshots/videocam.png"></div>
-                    <div><img src="screenshots/microphone.png"></div>
+                    <div><button id="camera">Turn Camera Off</button></div>
+                    <div><button id="mute">Mute</button></div>
                     <div><img src="screenshots/chat.png"></div>
+                    <div><select id="cameras"></select></div>
                 </div>
                 <div class="videocall__buttons__exit">
                     <a href="myclassroom-mentor.html"><button><span>나가기</span></button></a>
@@ -25,6 +26,14 @@
             </div>
         </section>
         <section class="interaction">
+            <div class="user-container">
+                <label for="nickname">보내는 사람</label>
+                <input type="text" id="nickname">
+                <button class="nickname-button">닉네임 save</button>
+                <label for="room">룸 번호</label>
+                <input type="text" id="room">
+                <button class="room-button">룸 save</button>
+            </div>
             <div class="interaction__users">
                 <div class="interaction__users__title"><span>참여자</span></div>
                 <div class="interaction__users__information">
@@ -43,14 +52,19 @@
                 <div class="interaction__chat__message">
                     <div>여기 모르겠어요!</div>
                     <div>같이 볼까요?</div>
+                    <ul class="chatting-list">
+                        <li class="sent"></li>
+                        <li class="received"></li>
+                    </ul>
                 </div>
                 <div class="interaction__chat__input">
-                    <input placeholder="메세지를 입력하세요...">
+                    <div><input type="text" class="chatting-input" placeholder=" 메세지를 입력하세요..."></div>
                     <button class="interaction__chat__input__button">보내기</button>
                 </div>
             </div>
         </section>
     </div>
-    
+    <script src="https://www.studydoctor.shop/socket.io/socket.io.js"></script>
+    <script src="/Learning-Management-System/js/videocall.js"></script>
 </body>
 </html>
