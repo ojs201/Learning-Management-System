@@ -13,6 +13,7 @@ const roomButton = document.querySelector(".room-button");
 const myFace = document.getElementById("myFace");
 const muteBtn = document.getElementById("mute");
 const cameraBtn = document.getElementById("camera");
+const chatBtn = document.getElementById("chat");
 const camerasSelect = document.getElementById("cameras");
 
 let roomName;
@@ -21,7 +22,9 @@ let muted = false;
 let cameraOff = false;
 let myPeerConnection;
 let myDataChannel;
+let interaction = false;
 
+displayContainer.hidden = true;
 nicknameButton.disabled = true;
 sendButton.disabled = true;
 
@@ -74,7 +77,17 @@ async function handleRoomSubmit(event){
     nicknameButton.disabled = false;
 }
 
+function handleChatSubmit(event){
+    event.preventDefault();
+    if(displayContainer.hidden){
+        displayContainer.hidden = false;
+    }else{
+        displayContainer.hidden = true;
+    }
+}
+
 roomButton.addEventListener("click", handleRoomSubmit);
+chatBtn.addEventListener("click", handleChatSubmit);
 
 socket.on("new_message", (nickname, message) =>{
     addMessage(nickname, message);
