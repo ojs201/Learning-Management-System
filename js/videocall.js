@@ -24,6 +24,7 @@ let cameraOff = false;
 let myPeerConnection;
 let myDataChannel;
 
+myFace.volume = 0;
 nicknameButton.disabled = true;
 sendButton.disabled = true;
 
@@ -113,11 +114,11 @@ async function getCameras(){
 
 async function getMedia(deviceId){
     const initialConstrains = {
-        audio: false,
+        audio: true,
         video: { facingMode: "user" }
     };
     const cameraConstrains = {
-        audio: false,
+        audio: true,
         video: { deviceId: { exact: deviceId } }
     };
     try{
