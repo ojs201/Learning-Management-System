@@ -27,9 +27,11 @@ function addMessage(name, message){
 function handleMessageSubmit(event){
     event.preventDefault();
     const value = chatInput.value;
-    socket.emit("new_message", chatInput.value, roomName, () =>{
-        addMessage(nickname.value, value);
-    });
+    if(chatInput.value !== ""){
+        socket.emit("new_message", chatInput.value, roomName, () =>{
+            addMessage(nickname.value, value);
+        });
+    }
     chatInput.value = "";
 }
 
@@ -57,6 +59,10 @@ function handleRoomSubmit(event){
 }
 
 roomButton.addEventListener("click", handleRoomSubmit);
+
+socket.on("welcome", (user) => {
+    addMessage(`${user} arrived!`);
+})
 
 socket.on("bye", (left) => {
     addMessage(left, "left ㅠㅠ");
