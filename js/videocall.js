@@ -24,7 +24,6 @@ let cameraOff = false;
 let myPeerConnection;
 let myDataChannel;
 
-interaction_section.style.display = "block";
 nicknameButton.disabled = true;
 sendButton.disabled = true;
 
