@@ -100,6 +100,7 @@ async function getCameras(){
 }
 
 async function getMedia(deviceId){
+    socket.emit("test", "test", roomName);
     const initialConstrains = {
         audio: true,
         video: { facingMode: "user" }
