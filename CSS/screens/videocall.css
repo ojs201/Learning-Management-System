@@ -163,6 +163,7 @@
     left: 10px;
     top: 60px;
 }
+
 .interaction__chat__input {
     margin-top: 10px;
 }
@@ -172,7 +173,7 @@
     gap: 8px;
     border-radius: 10px;
     background: #F5F5F5;
-    width: 268px;
+    width: 250px;
 }
 
 .interaction__chat__input__button {
@@ -187,3 +188,82 @@
 .interaction__chat__input__button :hover {
     cursor: pointer;
 }
+
+.chatting-list {
+    position: relative;
+}
+
+.videocall_sent {
+    border-radius: 10px;
+    overflow: hidden;
+    display: block;
+    padding: 10px 10px;
+    font-size: 16px;
+    position: relative;
+    left: 170px;
+    width: 200px;
+}
+
+.videocall_sent .videocall_user {
+    border-radius: 10px;
+    position: relative;
+    left: 0px;
+    display: none;
+}
+
+.videocall_sent .videocall_message {
+    border-radius: 10px;
+    background: var(--primary-green, #24C07F);
+    overflow: hidden;
+    padding: 5px 10px;
+    font-size: 16px;
+    display: block;
+}
+
+.videocall_received {
+    border-radius: 10px;
+    display: block;
+    padding: 10px 10px;
+    font-size: 16px;
+    width: 250px;
+
+}
+
+.videocall_received .videocall_user {
+    border-radius: 10px;
+}
+
+.videocall_received .videocall_message {
+    border-radius: 10px;
+    background: var(--primary-green, #EBEBEB);
+    overflow: hidden;
+    padding: 5px 10px;
+    font-size: 16px;
+    display: block;
+}
+
+.user-container__sent label {
+    color: white;
+}
+
+.user-container__receive label {
+    color: white;
+}
+
+#camera:hover {
+    cursor: pointer;
+}
+
+#camera:active {
+    cursor: pointer;
+    
+}
+
+#mute:hover {
+    cursor: pointer;
+}
+
+#chat:hover {
+    cursor: pointer;
+}
+
