@@ -76,11 +76,6 @@ async function handleRoomSubmit(event){
 
 roomButton.addEventListener("click", handleRoomSubmit);
 
-socket.on("bye", (left) => {
-    addMessage(left, "left ㅠㅠ");
-})
-
-
 socket.on("new_message", (nickname, message) =>{
     addMessage(nickname, message);
 });

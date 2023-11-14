@@ -64,10 +64,6 @@ socket.on("welcome", (user) => {
     addMessage(`${user} arrived!`);
 })
 
-socket.on("bye", (left) => {
-    addMessage(left, "left ㅠㅠ");
-})
-
 
 socket.on("new_message", (nickname, message) =>{
     addMessage(nickname, message);
