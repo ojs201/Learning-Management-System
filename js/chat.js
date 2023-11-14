@@ -15,9 +15,10 @@ let roomName;
 nicknameButton.disabled = true;
 sendButton.disabled = true;
 
-function addMessage(nickname, message){
+function addMessage(name, message){
     const li = document.createElement("li");
-    const dom =`<span class="user">${nickname}</span>
+    li.classList.add(nickname.value === name ? "sent" : "received");
+    const dom =`<span class="user">${name}</span>
     <span class="message">${message}</span>`;
     li.innerHTML = dom;
     chatList.appendChild(li);
