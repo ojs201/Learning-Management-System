@@ -16,9 +16,9 @@
             <div><video id="peersFace" autoplay playsinline width="400" height="300"></video></div>
             <div class="videocall__buttons">
                 <div class="videocall__buttons__function">
-                    <div><img src="screenshots/videocam.png" id="camera"></div>
-                    <div><img src="screenshots/microphone.png" id="mute"></div>
-                    <div><img src="screenshots/chat.png", id="chat"></div>
+                    <div><img src="screenshots/videocam.png" id="camera" onclick="video_changeImage()"></div>
+                    <div><img src="screenshots/microphone.png" id="mute" onclick="mic_changeImage()"></div>
+                    <div><img src="screenshots/chat.png", id="chat" onclick="chat_changeImage()"></div>
                     <div><select id="cameras"></select></div>
                 </div>
                 <div class="videocall__buttons__exit">
@@ -28,12 +28,17 @@
         </section>
         <section class="interaction" id="interaction_section">
             <div class="user-container">
-                <label for="nickname">보내는 사람</label>
-                <input type="text" id="nickname">
-                <button class="nickname-button">닉네임 save</button>
-                <label for="room">룸 번호</label>
-                <input type="text" id="room">
-                <button class="room-button">룸 save</button>
+                <div class="user-container__sent">
+                    <label for="nickname">보내는 사람</label>
+                    <input type="text" id="nickname">
+                    <button class="nickname-button">닉네임 save</button>
+                </div>
+                <div class="user-container__receive">
+                    <label for="room" class="room-number">룸 번호</label>
+                    <input type="text" id="room">
+                    <button class="room-button">룸 save</button>
+                </div>
+                
             </div>
             <div class="interaction__users">
                 <div class="interaction__users__title"><span>참여자</span></div>
@@ -51,15 +56,11 @@
             <div class="interaction__chat">
                 <div class="interaction__chat__title">채팅창</div>
                 <div class="interaction__chat__message">
-                    <div>여기 모르겠어요!</div>
-                    <div>같이 볼까요?</div>
                     <ul class="chatting-list">
-                        <li class="sent"></li>
-                        <li class="received"></li>
                     </ul>
                 </div>
                 <div class="interaction__chat__input">
-                    <div><input type="text" class="chatting-input" placeholder=" 메세지를 입력하세요..."></div>
+                    <input type="text" class="chatting-input" placeholder=" 메세지를 입력하세요...">
                     <button class="interaction__chat__input__button">보내기</button>
                 </div>
             </div>
@@ -67,5 +68,39 @@
     </div>
     <script src="https://www.studydoctor.shop/socket.io/socket.io.js"></script>
     <script src="/Learning-Management-System/js/videocall.js"></script>
+    <script>
+        var imageIndex = 1;
+
+        function video_changeImage() {
+          var imageElement = document.getElementById('camera');
+        
+          var imagePath = (imageIndex === 1) ? 'screenshots/videocam_off.png' : 'screenshots/videocam.png';
+        
+          imageElement.src = imagePath;
+        
+          imageIndex = (imageIndex === 1) ? 2 : 1;
+        }
+
+        function mic_changeImage() {
+            var imageElement = document.getElementById('mute');
+          
+            var imagePath = (imageIndex === 1) ? 'screenshots/mic_off.png' : 'screenshots/microphone.png';
+          
+            imageElement.src = imagePath;
+          
+            imageIndex = (imageIndex === 1) ? 2 : 1;
+          }
+
+          function chat_changeImage() {
+            var imageElement = document.getElementById('chat');
+          
+            var imagePath = (imageIndex === 1) ? 'screenshots/chat.png' : 'screenshots/chat_off.png';
+          
+            imageElement.src = imagePath;
+          
+            imageIndex = (imageIndex === 1) ? 2 : 1;
+          }
+
+    </script>
 </body>
 </html>

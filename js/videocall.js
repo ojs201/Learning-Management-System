@@ -30,9 +30,9 @@ sendButton.disabled = true;
 
 function addMessage(name, message){
     const li = document.createElement("li");
-    li.classList.add(nickname.value === name ? "sent" : "received");
-    const dom =`<span class="user">${name}</span>
-    <span class="message">${message}</span>`;
+    li.classList.add(nickname.value === name ? "videocall_sent" : "videocall_received");
+    const dom =`<span class="videocall_user">${name}</span>
+    <span class="videocall_message">${message}</span>`;
     li.innerHTML = dom;
     chatList.appendChild(li);
 }
