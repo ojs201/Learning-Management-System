@@ -61,7 +61,7 @@ function handleRoomSubmit(event){
 roomButton.addEventListener("click", handleRoomSubmit);
 
 socket.on("welcome", (user) => {
-    addMessage(`${user} arrived!`);
+    addMessage(user, "arrived");
 })
 
 
