@@ -80,8 +80,10 @@ function handleChatSubmit(event){
     event.preventDefault();
     if(interaction_section.style.display === "none"){
         interaction_section.style.display = "block";
+        chatBtn.src = 'screenshots/chat_off.png';
     }else{
         interaction_section.style.display = "none";
+        chatBtn.src = 'screenshots/chat.png';
     }
 }
 
@@ -136,20 +138,20 @@ async function getMedia(deviceId){
 function handleMuteClick() {
     myStream.getAudioTracks().forEach(track => track.enabled = !track.enabled)
     if(!muted){
-        muteBtn.innerText = "Unmute";
+        muteBtn.src = 'screenshots/microphone.png';
         muted = true;
     }else{
-        muteBtn.innerText = "Mute";
+        muteBtn.src = 'screenshots/mic_off.png';
         muted = false;
     }
 }
 function handleCameraClick() {
     myStream.getVideoTracks().forEach(track => track.enabled = !track.enabled)
     if(cameraOff){
-        cameraBtn.innerText = "Turn Camera Off";
+        cameraBtn.src = 'screenshots/videocam_off.png';
         cameraOff = false;
     }else{
-        cameraBtn.innerText = "Turn Camera On";
+        cameraBtn.src = 'screenshots/videocam.png';
         cameraOff = true;
     }
 }
